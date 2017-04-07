@@ -1,0 +1,11 @@
+development:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/github.com/bradleyfalzon/buffalo-test/buffalo-test_development.sqlite
+
+test:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/github.com/bradleyfalzon/buffalo-test/buffalo-test_test.sqlite
+
+production:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/github.com/bradleyfalzon/buffalo-test/buffalo-test_production.sqlite
